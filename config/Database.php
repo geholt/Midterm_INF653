@@ -1,9 +1,9 @@
 <?php
     class Database{
         // DB Params
-        private $host = 'localhost';
-        private $db_name = 'quotesdb_6sai_user';
-        private $username = 'root';
+        private $host = 'dpg-cg7kqc5269v5l62gnfdg-a';
+        private $db_name = 'quotesdb_6sai';
+        private $username = 'quotesdb_6sai_user';
         private $password = '123456';
         private $conn;
 
@@ -21,8 +21,4 @@
             }
             return $this->conn;
         }
-        //change
-        //change
-        //change
-        //change
     }
