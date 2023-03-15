@@ -1,11 +1,22 @@
 <?php
     class Database{
         // DB Params
-        private $host = 'dpg-cg7kqc5269v5l62gnfdg-a';
-        private $db_name = 'quotesdb_6sai';
-        private $username = 'quotesdb_6sai_user';
-        private $password = '123456';
+        private $host;
+        private $db_name;
+        private $username;
+        private $password;
         private $conn;
+        private $port;
+
+        //constructor
+        public function __construct(){
+            $this->username = getenv('USERNAME');
+            $this->password = getenv('PASSWORD');
+            $this->db_name = getenv('DBNAME');
+            $this->host = getenv('HOST');
+            $this->port = getenv('PORT');
+            
+        }
 
 
         //DB Connect
