@@ -14,8 +14,7 @@
             $this->password = getenv('PASSWORD');
             $this->db_name = getenv('DBNAME');
             $this->host = getenv('HOST');
-            $this->port = getenv('PORT');
-            
+            $this->port = getenv('PORT');            
         }
 
 
