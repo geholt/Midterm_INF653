@@ -1,7 +1,7 @@
 <?php
 	header('Content-Type: application/json');
 	
-	include_once '../../config/database.php';
+	include_once '../../config/Database.php';
 	include_once '../../models/Category.php';
 	
 	$database = new Database();
@@ -17,8 +17,7 @@
 		$category_arr = array(
 			'id' => $categories->id,
 			'category' => $categories->category
-		);
-			
+		);			
 		echo json_encode($category_arr);
 	} else {
 		echo json_encode(
